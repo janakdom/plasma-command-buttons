@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="General">
+        <entry name="groups" type="String">
+            <default>[{"label":"Síť","columns":2,"buttons":[{"name":"Moje IP","command":"curl -s https://ifconfig.me","icon":"network-wired","span":1,"closeMode":"none"},{"name":"Ping Google","command":"ping -c 3 8.8.8.8","icon":"network-connect","span":1,"closeMode":"none"}]},{"label":"Systém","columns":3,"buttons":[{"name":"Uptime","command":"uptime -p","icon":"clock","span":1,"closeMode":"none"},{"name":"Disk","command":"df -h /","icon":"drive-harddisk","span":2,"closeMode":"none"}]}]</default>
+        </entry>
+        <!-- záložky s tlačítky; prázdné = převést starší "groups" na jednu záložku -->
+        <entry name="tabs" type="String">
+            <default></default>
+        </entry>
+        <!-- proměnné pro příkazy: [{name, value, secret}], v příkazu jako %name% -->
+        <entry name="variables" type="String">
+            <default>[]</default>
+        </entry>
+        <!-- sdílené funkce: [{name, params, description, body}], v příkazech jako příkazy v PATH -->
+        <entry name="functions" type="String">
+            <default>[]</default>
+        </entry>
+        <entry name="lastTab" type="Int">
+            <default>0</default>
+        </entry>
+        <!-- připnutý widget se nezavírá při kliknutí mimo něj -->
+        <entry name="pin" type="Bool">
+            <default>false</default>
+        </entry>
+        <!-- přepínání záložek v otevřeném widgetu (QKeySequence::PortableText) -->
+        <entry name="prevTabShortcut" type="String">
+            <default>Ctrl+Left</default>
+        </entry>
+        <entry name="nextTabShortcut" type="String">
+            <default>Ctrl+Right</default>
+        </entry>
+        <!-- nadpis vlevo nahoře ve widgetu (při jedné záložce) a v tooltipu -->
+        <entry name="title" type="String">
+            <default>Příkazy</default>
+        </entry>
+        <entry name="panelIcon" type="String">
+            <default>utilities-terminal</default>
+        </entry>
+        <entry name="showOutput" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="outputHideTimeout" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="clearOutputOnOpen" type="Bool">
+            <default>false</default>
+        </entry>
+        <entry name="timeout" type="Int">
+            <default>30</default>
+        </entry>
+    </group>
+</kcfg>

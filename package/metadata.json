@@ -1,0 +1,21 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "dominikjanak@gmail.com",
+                "Name": "Dominik Janák"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "Grid of programmable buttons in a panel popup that run shell commands (bash, curl, webhooks…)",
+        "Description[cs]": "Mřížka programovatelných tlačítek v panelu, která spouštějí shell příkazy (bash, curl, webhooky…)",
+        "Icon": "utilities-terminal",
+        "Id": "cz.janakd.commandbuttons",
+        "License": "GPL-2.0+",
+        "Name": "Command Buttons",
+        "Name[cs]": "Příkazová tlačítka",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
