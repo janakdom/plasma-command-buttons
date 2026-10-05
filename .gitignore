@@ -1,0 +1,8 @@
+# sestavené balíčky
+*.plasmoid
+
+# lokální záloha konfigurace widgetu (obsahuje osobní příkazy)
+backup-widget-config.ini
+
+# exporty tlačítek
+command-buttons*.json
